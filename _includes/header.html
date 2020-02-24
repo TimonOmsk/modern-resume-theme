@@ -121,6 +121,11 @@
           Web: {% include a.html href=site.website %}{{ site.website | escape }}</a>
         </p>
       {%- endif -%}
+      {%- if site.cv_link -%}
+        <p>
+          CV: <a target="_blank" href="{{ site.cv_link }}">{{ site.cv_link }}</a>
+        </p>
+      {%- endif -%}
     </div>
   </div>
 </div>
